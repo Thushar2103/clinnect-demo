@@ -1,36 +1,57 @@
 <!DOCTYPE html> 
 <html lang="en"> 
   <head> 
-    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Untitled.png"> 
     <title>Clinnect</title>
     <style> 
-    body { 
+body { 
       font-family: Arial, sans-serif; 
       line-height: 1.6; 
       margin-top: 50px;
       padding: 10px;
-    }
-    header {
+}
+header {
   background-color: #f8f8f8;
   padding: 20px;
-  text-align: center;
-}
-
-.heading{
   text-align: center;
   
 }
 
-header h1 {
-  margin: 0;
+/* ----------------------------------------------------------------------- */
+.head {
+ display: grid;
+ align-items: center;
+ justify-content:space-evenly; 
+ grid-template-columns: 1fr 1fr 1fr;
+ column-gap: 5px;
 }
 
 img {
-  width: 50%;
-  display: block;
+  padding-left: 10px;
+  width: 200%;
+  /* display: block;
   margin-left: auto; 
-  margin-right: auto;
+  margin-right: auto; */
 }
+
+.text {
+  font-size: 70px;
+  
+}
+/* ---------------------------------------------------------------------------- */
+
+.heading{
+  padding-left: 10px;
+  font-size: 40px;
+  
+}
+/* 
+header h1 {
+  margin: 0;
+} */
+
+
 
 main h2{
   font-size: 30px;
@@ -45,14 +66,12 @@ nav{
  left: 0;
  right: 0;
  top: 0;
- width: 100%;
+ width: auto;
  height: 50px;
- background: #e5e2e2;
- box-shadow: 5px 5px 10px rgba(35, 28, 28, 0.1);
+ background: #b3aeae;
+ box-shadow: 5px 5px 5px rgba(0, 0, 0.1, 0.2);
 }
 nav .navbar{
- 
-  
  display: flex;
  align-items: center;
  justify-content: space-between;
@@ -121,7 +140,6 @@ section{
   box-shadow: rgba(0, 0, 0, 0.15);
 }
 
-
 main {
   padding: 20px;
 }
@@ -154,7 +172,6 @@ h2 {
   justify-content:space-evenly;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-bottom: 20px;
 }
 
 .card-client {
@@ -162,10 +179,10 @@ h2 {
   width: 13rem;
   padding-top: 40px;
   padding-bottom: 20px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border: 4px solid #000000;
-  box-shadow: 0 6px 10px #212121;
+  /* padding-left: 2px;
+  padding-right: 2px; */
+  border: 1px solid #000000;
+  box-shadow: 2px 2px 2px  #212121;
   border-radius: 10px;
   text-align: center;
   color: #000000;
@@ -178,7 +195,7 @@ h2 {
   overflow: hidden;
   width: 6rem;
   height: 7rem;
-  border: 2px solid #000000;
+  border: 1px solid #000000;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -187,7 +204,6 @@ h2 {
 }
 
 .user-picture img{
-
     width: 100%; /* or any custom size */
     height: 100%; 
     object-fit:cover;
@@ -212,8 +228,8 @@ h2 {
 
 .name-client span {
   display: block;
-  font-weight: 200;
-  font-size: 16px;
+  font-weight: 5;
+  font-size: 12px;
 }
 
 
@@ -246,18 +262,21 @@ h2 {
   <div class="button">
     <a href="#Home"><i class="fas fa-arrow-up"></i></a>
   </div> -->
-  <main> 
-    <h2 class="heading">Welcome to Clinnect – Where Health Connects!</h2>
+  <main>
+    <div class="head">
+    <h2 class="heading">Welcome to Clinnect Where Health Connects!</h2>
     <img src="nurse-2019420_1280.jpg" alt="Flowers in Chania">
+  </div>
     <hr class="solid">
-    <h2>Why Clinnect.?</h2> 
+    <h2>Why Clinnect.</h2> 
     <p>In an era where healthcare is evolving rapidly, Clinnect envisions a future where small clinics are seamlessly connected, sharing knowledge and resources effortlessly. We aspire to break down silos, facilitate communication, and empower healthcare professionals with the tools they need to deliver outstanding patient outcomes.</p> 
     <hr class="solid">
     <h2>ABOUT US.</h2> 
     <p>At Clinnect, we envision a seamlessly interconnected healthcare ecosystem, empowering small clinics to thrive collectively on a unified platform. Our mission is to revolutionize the way healthcare providers collaborate and share information, fostering a network that enhances patient care, streamlines operations, and ultimately transforms the healthcare experience.</p> 
     <p>Join us on the journey towards a connected healthcare future. Clinnect is not just a platform; it's a movement towards a collaborative, patient-centric approach to healthcare. Together, let's build a healthier and more connected world.</p>
     <hr class="solid">
-    <h2>THE TEAM.</h2> 
+    <h2>TEAM.</h2>
+     <br>
     <div class="card">
       <div class="card-client">
       <div class="user-picture">
@@ -282,6 +301,7 @@ h2 {
     <p class="name-client"> Pradeepa
         <span>Ui Designing
         </span>
+        <br>
     </p>
 </div>
 
@@ -293,10 +313,11 @@ h2 {
   </div>
   <p class="name-client"> Mukesh
       <span>Testing
-      </span>
+      </span><br>
   </p>
 </div>
 </div>
+<br>
     <p>All art is quite useless. One can never consent to creep when one feels an impuise to soar. Words do not express thoughts very well, they always become a little different immediately after they are expressed a little distorted, a little foolish.</p> 
     <section id="Home">Home Section</section>
     <h2>Social Media</h2> <p>Connect with us on:</p> 
@@ -314,6 +335,6 @@ h2 {
     
     
   </main> 
-  <footer><h2>Hello world</h2></footer>   
+  <footer></footer>   
 </body> 
 </html>
