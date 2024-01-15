@@ -148,23 +148,22 @@ h2 {
 }
 
 .card{
-  
   /* justify-content: center; */
   align-items: center;
   display:flex;
   justify-content:space-evenly;
-flex-direction: row;
-flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
 }
 
 .card-client {
-  margin-left: 50px;
   background: #ffffff;
   width: 13rem;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  padding-left: 5px;
+  padding-right: 5px;
   border: 4px solid #000000;
   box-shadow: 0 6px 10px #212121;
   border-radius: 10px;
@@ -177,15 +176,22 @@ flex-wrap: wrap;
 
 .user-picture {
   overflow: hidden;
-  object-fit: cover;
-  width: 5rem;
-  height: 5rem;
-  border: 4px solid #000000;
-  border-radius: 999px;
+  width: 6rem;
+  height: 7rem;
+  border: 2px solid #000000;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
+}
+
+.user-picture img{
+
+    width: 100%; /* or any custom size */
+    height: 100%; 
+    object-fit:cover;
+
 }
 
 .user-picture svg {
@@ -193,6 +199,9 @@ flex-wrap: wrap;
   fill: currentColor;
 }
 
+/* .user-picture  img{
+  padding: 100px;
+} */
 .name-client {
   margin: 0;
   margin-top: 20px;
@@ -239,16 +248,19 @@ flex-wrap: wrap;
     <hr class="solid">
     <h2>Why Clinnect.?</h2> 
     <p>In an era where healthcare is evolving rapidly, Clinnect envisions a future where small clinics are seamlessly connected, sharing knowledge and resources effortlessly. We aspire to break down silos, facilitate communication, and empower healthcare professionals with the tools they need to deliver outstanding patient outcomes.</p> 
+    <hr class="solid">
     <h2>ABOUT US.</h2> 
     <p>At Clinnect, we envision a seamlessly interconnected healthcare ecosystem, empowering small clinics to thrive collectively on a unified platform. Our mission is to revolutionize the way healthcare providers collaborate and share information, fostering a network that enhances patient care, streamlines operations, and ultimately transforms the healthcare experience.</p> 
     <p>Join us on the journey towards a connected healthcare future. Clinnect is not just a platform; it's a movement towards a collaborative, patient-centric approach to healthcare. Together, let's build a healthier and more connected world.</p>
+    <hr class="solid">
     <h2>THE TEAM.</h2> 
     <div class="card">
       <div class="card-client">
       <div class="user-picture">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <img src="IMG_0729.jpeg">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
               <path d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"></path>
-          </svg>
+          </svg> -->
       </div>
       <p class="name-client"> Thushar
           <span>CEO of WritBook
