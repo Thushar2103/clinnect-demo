@@ -3,6 +3,7 @@
   <head> 
     <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="clinnectlogo.png"> 
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <title>Clinnect</title>
     <style> 
 body { 
@@ -96,6 +97,7 @@ nav .navbar .logo a{
 
 nav .navbar .menu{
   display: flex;
+  justify-content: space-between;
 }
 .navbar .menu li{
   list-style: none;
@@ -272,48 +274,44 @@ font-size: 20px;
     </div>
     <!-- <p>Note: the platform is in early stage of Development</p>  -->
     <section id="team">
-    <hr>
-    <h2>TEAM.</h2>
-     <br>
-    <div class="card">
-      <div class="card-client">
-      <div class="user-picture">
-        <img src="IMG_0729.jpeg">
-          <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-              <path d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"></path>
-          </svg> -->
-      </div>
-      <p class="name-client"> Thushar
-          <span>Frontend Development
-          </span>
-          <span>Backend Development
-          </span>
-      </p>
-  </div>
-  <div class="card-client">
-    <div class="user-picture">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-            <path d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"></path>
-        </svg>
+<div class="bg-white py-24 sm:py-32">
+  <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+    <div class="max-w-2xl">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">TEAM.</h2>
+      <p class="mt-6 text-lg leading-8 text-gray-600">Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae elementum enim vitae ullamcorper suspendisse.</p>
     </div>
-    <p class="name-client"> Pradeepa
-        <span>Ui Designing
-        </span>
-        <br>
-    </p>
-</div>
+    <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+      <li>
+        <div class="flex items-center gap-x-6">
+          <img class="h-16 w-16 rounded-full" src="IMG_0729.jpeg" alt="">
+          <div>
+            <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Thushar</h3>
+            <p class="text-sm font-semibold leading-6 text-indigo-600">Frontend / Backend</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex items-center gap-x-6">
+          <img class="h-16 w-16 rounded-full" src="" alt="">
+          <div>
+            <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Pradeepa</h3>
+            <p class="text-sm font-semibold leading-6 text-indigo-600">...</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="flex items-center gap-x-6">
+          <img class="h-16 w-16 rounded-full" src="" alt="">
+          <div>
+            <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Mukesh</h3>
+            <p class="text-sm font-semibold leading-6 text-indigo-600">...</p>
+          </div>
+        </div>
+      </li>
 
-<div class="card-client">
-  <div class="user-picture">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-          <path d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"></path>
-      </svg>
+      <!-- More people... -->
+    </ul>
   </div>
-  <p class="name-client"> Mukesh
-      <span>Testing
-      </span><br>
-  </p>
-</div>
 </div>
 </section>
 <br>
